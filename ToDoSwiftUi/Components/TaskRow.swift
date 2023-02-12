@@ -6,11 +6,12 @@
 //
 
 import SwiftUI
+import RealmSwift
 
 struct TaskRow: View {
-    
     var task: String
     var completed: Bool
+    
     var body: some View {
         HStack(spacing: 20) {
             Image(systemName: completed ? "checkmark.circle" : "circle")
